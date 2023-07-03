@@ -1,0 +1,52 @@
+/* App.css */
+
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.links {
+  list-style-type: none;
+  display: flex;
+}
+
+.links li {
+  margin-right: 1rem;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  
+}
+
+.static-card {
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.static-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.static-card ul {
+  list-style-type: none;
+}
+
+.static-card li {
+  margin-bottom: 0.5rem;
+}
+
