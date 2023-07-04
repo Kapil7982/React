@@ -3,6 +3,7 @@ import StaticCard from './StaticCard ';
 import Logo from './Navbar/Logo';
 import Links from './Navbar/Links';
 import Button from './Navbar/Button';
+import Counter from './CounterComponenet/Counter';
 import './App.css';
 
 function App() {
@@ -17,7 +18,13 @@ function App() {
       <div className="static-card">
         <StaticCard />
       </div>
+
+      <div>
+        <Counter inititalValue={0}/>
+      </div>
     </div>
+
+    
   );
 }
 
