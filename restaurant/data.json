@@ -1,0 +1,408 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Cafe StayWoke",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/11630045348768.jpg",
+      "categories": [
+        "Continental",
+        "Pizza",
+        "Asian",
+        "Desserts"
+      ],
+      "ratings": 4.9,
+      "votes": 766,
+      "reviews": 512,
+      "costForOne": 750,
+      "deliveryTime": "Up to 30 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Diggin (CP)",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/21630045349979.jpg",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Mediterranean"
+      ],
+      "ratings": 4.9,
+      "votes": 300,
+      "reviews": 200,
+      "costForOne": 700,
+      "deliveryTime": "45 min",
+      "paymentMethods": [
+        "All"
+        
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Aquila",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/31630045349657.jpg",
+      "categories": [
+        "Cafe",
+        "Coffee",
+        "Bakery"
+      ],
+      "ratings": 0.8,
+      "votes": 150,
+      "reviews": 120,
+      "costForOne": 750,
+      "deliveryTime": "20 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Bo-Tai Switch",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/41630045349982.jpg",
+      "categories": [
+        "Continental",
+        "Pizza",
+        "Asian",
+        "Desserts"
+      ],
+      "ratings": 1.3,
+      "votes": 776,
+      "reviews": 52,
+      "costForOne": 1250,
+      "deliveryTime": "Up to 30 min",
+      "paymentMethods": [
+        "Online"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Klap",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/51630045349027.jpg",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Mediterranean"
+      ],
+      "ratings": 3.6,
+      "votes": 390,
+      "reviews": 240,
+      "costForOne": 1000,
+      "deliveryTime": "45 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "RYU Bar",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/201630045349715.jpg",
+      "categories": [
+        "Cafe",
+        "Coffee",
+        "Bakery"
+      ],
+      "ratings": 4.4,
+      "votes": 150,
+      "reviews": 120,
+      "costForOne": 1250,
+      "deliveryTime": "20 min",
+      "paymentMethods": [
+        "Online"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "So Chow",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/191630045349672.jpg",
+      "categories": [
+        "Continental",
+        "Pizza",
+        "Asian",
+        "Desserts"
+      ],
+      "ratings": 2.3,
+      "votes": 766,
+      "reviews": 512,
+      "costForOne": 400,
+      "deliveryTime": "Up to 30 min",
+      "paymentMethods": [
+        "All"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Saga - Cuisines Of India",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/181630045349313.jpg",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Mediterranean"
+      ],
+      "ratings": 4.8,
+      "votes": 300,
+      "reviews": 200,
+      "costForOne": 450,
+      "deliveryTime": "45 min",
+      "paymentMethods": [
+        "Online"
+        
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Kylin Skybar",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/171630045349739.jpg",
+      "categories": [
+        "Cafe",
+        "Coffee",
+        "Bakery"
+      ],
+      "ratings": 3.5,
+      "votes": 150,
+      "reviews": 120,
+      "costForOne": 650,
+      "deliveryTime": "20 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Miss Pinto",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/161630045349976.jpg",
+      "categories": [
+        "Continental",
+        "Pizza",
+        "Asian",
+        "Desserts"
+      ],
+      "ratings": 4.6,
+      "votes": 766,
+      "reviews": 512,
+      "costForOne": 1000,
+      "deliveryTime": "Up to 30 min",
+      "paymentMethods": [
+        "Online"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Plum By Bent Chair",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/151630045349978.jpg",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Mediterranean"
+      ],
+      "ratings": 4.8,
+      "votes": 300,
+      "reviews": 200,
+      "costForOne": 1500,
+      "deliveryTime": "45 min",
+      "paymentMethods": [
+        "All"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "The Big Tree Cafe",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/141630045348774.jpg",
+      "categories": [
+        "Cafe",
+        "Coffee",
+        "Bakery"
+      ],
+      "ratings": 3.3,
+      "votes": 150,
+      "reviews": 120,
+      "costForOne": 500,
+      "deliveryTime": "20 min",
+      "paymentMethods": [
+        "Online"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Kampai",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/131630045349972.jpg",
+      "categories": [
+        "Continental",
+        "Pizza",
+        "Asian",
+        "Desserts"
+      ],
+      "ratings": 5,
+      "votes": 766,
+      "reviews": 512,
+      "costForOne": 1700,
+      "deliveryTime": "Up to 30 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Mai Bao",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/121630045349659.jpg",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Mediterranean"
+      ],
+      "ratings": 4.5,
+      "votes": 300,
+      "reviews": 200,
+      "costForOne": 600,
+      "deliveryTime": "45 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Plats",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/111630045349619.jpg",
+      "categories": [
+        "Cafe",
+        "Coffee",
+        "Bakery"
+      ],
+      "ratings": 1.3,
+      "votes": 150,
+      "reviews": 120,
+      "costForOne": 1000,
+      "deliveryTime": "20 min",
+      "paymentMethods": [
+        "All"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Coco N Chilli",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/101630045349980.jpg",
+      "categories": [
+        "Continental",
+        "Pizza",
+        "Asian",
+        "Desserts"
+      ],
+      "ratings": 3.3,
+      "votes": 766,
+      "reviews": 512,
+      "costForOne": 250,
+      "deliveryTime": "Up to 30 min",
+      "paymentMethods": [
+        "Online"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Plate",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/91630045349970.jpg",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Mediterranean"
+      ],
+      "ratings": 4.2,
+      "votes": 450,
+      "reviews": 45,
+      "costForOne": 900,
+      "deliveryTime": "45 min",
+      "paymentMethods": [
+        "All"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Kiko-Bā",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/81630045349724.jpg",
+      "categories": [
+        "Cafe",
+        "Coffee",
+        "Bakery"
+      ],
+      "ratings": 2.3,
+      "votes": 150,
+      "reviews": 120,
+      "costForOne": 1000,
+      "deliveryTime": "20 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "C’est La Vie",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/71630045349792.jpg",
+      "categories": [
+        "Continental",
+        "Pizza",
+        "Asian",
+        "Desserts"
+      ],
+      "ratings": 3.3,
+      "votes": 786,
+      "reviews": 312,
+      "costForOne": 550,
+      "deliveryTime": "Up to 30 min",
+      "paymentMethods": [
+        "Online"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Colocal “The Cacao Artisans”",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/61630045349721.jpg",
+      "categories": [
+        "Italian",
+        "Pasta",
+        "Mediterranean"
+      ],
+      "ratings": 4.5,
+      "votes": 600,
+      "reviews": 270,
+      "costForOne": 500,
+      "deliveryTime": "45 min",
+      "paymentMethods": [
+        "Cash"
+      ]
+    },
+    {
+      "name": "Under The Neem",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/211630045349485.jpg",
+      "categories": [
+        "pizza",
+        "dessert"
+      ],
+      "ratings": 4.3,
+      "votes": "768",
+      "reviews": "800",
+      "costForOne": "456",
+      "deliveryTime": " Up to 60 min",
+      "paymentMethods": [
+        "All"
+      ],
+      "id": 21
+    },
+    {
+      "name": "Dum maro dum",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/f_auto/v1517220280/interior-shot509.jpg",
+      "categories": [
+        "pizza",
+        "dessert"
+      ],
+      "ratings": 0,
+      "votes": "466",
+      "reviews": "467",
+      "costForOne": "356",
+      "deliveryTime": " Up to 60 min",
+      "paymentMethods": [
+        "Cash"
+      ],
+      "rating": "5.0",
+      "id": 22
+    }
+  ]
+}
