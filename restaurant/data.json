@@ -35,7 +35,6 @@
       "deliveryTime": "45 min",
       "paymentMethods": [
         "All"
-        
       ]
     },
     {
@@ -146,7 +145,6 @@
       "deliveryTime": "45 min",
       "paymentMethods": [
         "Online"
-        
       ]
     },
     {
@@ -403,6 +401,24 @@
       ],
       "rating": "5.0",
       "id": 22
+    },
+    {
+      "name": "Duty Free",
+      "image": "https://cdn.pixabay.com/photo/2015/03/04/22/35/head-659652__340.png",
+      "categories": [
+        "pizza",
+        "dessert",
+        "pasta"
+      ],
+      "ratings": "5",
+      "votes": "566",
+      "reviews": "450",
+      "costForTwo": "1600",
+      "deliveryTime": " Up to 60 min",
+      "paymentMethods": [
+        "Cash"
+      ],
+      "id": 23
     }
   ]
 }

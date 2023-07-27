@@ -1,6 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const RestaurantDetails = ({ data, setRestaurants }) => {
+const ITEMS_PER_PAGE = 5;
+
+const RestaurantDetails = ({ data, setRestaurants, favorites, handleFavoriteToggle }) => {
+
+
+  const [currentPage, setCurrentPage] = useState(1);
+
+ 
+  const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
+  const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
+  const currentData = data.slice(indexOfFirstItem, indexOfLastItem);
+
+  useEffect(() => {
+    setCurrentPage(1); 
+  }, [data]);
+
+  
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+  
+
+  const [sortOrder, setSortOrder] = useState('default');
+
+  const handleSortByCost = (order) => {
+    let sortedRestaurants = [...data];
+    if (order === 'highToLow') {
+      sortedRestaurants.sort((a, b) => b.costForTwo - a.costForTwo);
+    } else if (order === 'lowToHigh') {
+      sortedRestaurants.sort((a, b) => a.costForTwo - b.costForTwo);
+    }
+    setSortOrder(order);
+    setRestaurants(sortedRestaurants);
+  };
 
   
 
@@ -37,7 +70,7 @@ const RestaurantDetails = ({ data, setRestaurants }) => {
     ratings:0,
     votes: 0,
     reviews: 0,
-    costForOne: 0,
+    costForTwo: 0,
     deliveryTime: '',
     paymentMethods: []
   });
@@ -79,7 +112,7 @@ const RestaurantDetails = ({ data, setRestaurants }) => {
       ratings:0,
       votes: 0,
       reviews: 0,
-      costForOne: 0,
+      costForTwo: 0,
       deliveryTime: '',
       paymentMethods: []
     });
@@ -136,9 +169,9 @@ const RestaurantDetails = ({ data, setRestaurants }) => {
         />
         <input
           type="number"
-          name="costForOne"
+          name="costForTwo"
           placeholder="Cost for One"
-          value={newRestaurant.costForOne}
+          value={newRestaurant.costForTwo}
           onChange={handleInputChange}
         />
         <input
@@ -167,6 +200,12 @@ const RestaurantDetails = ({ data, setRestaurants }) => {
         <button onClick={() => handleSortByRatings(1)}>1 Star</button>
       </div>
 
+
+      <div className="sorting-buttons">
+        <button onClick={() => handleSortByCost('highToLow')}>Sort High to Low</button>
+        <button onClick={() => handleSortByCost('lowToHigh')}>Sort Low to High</button>
+      </div>
+
       <div className="payment-buttons">
         <button onClick={() => handleFilterByPayment('cash')}>Cash Only</button>
         <button onClick={() => handleFilterByPayment('card')}>Card Accepted</button>
@@ -174,18 +213,32 @@ const RestaurantDetails = ({ data, setRestaurants }) => {
       </div>
 
       <div className="restaurant-grid">
-        {data.map((restaurant) => (
+        {currentData.map((restaurant) => (
           <div key={restaurant.id} className="restaurant-card">
             <img src={restaurant.image} alt={restaurant.name} />
             <h2>{restaurant.name}</h2>
             <p>{restaurant.categories.join(', ')}</p>
             <p id='rate'>{restaurant.ratings}</p>
             <p>{restaurant.votes} votes</p>
-            <p>Cost ₹{restaurant.costForOne} for one</p>
+            <p>Cost ₹{restaurant.costForTwo} for two</p>
             <p>{restaurant.reviews} reviews</p>
             <p>Min {restaurant.deliveryTime}</p>
             <p>Accepts {restaurant.paymentMethods.join(', ')} payments method</p>
+            <button
+        className="favorite-btn"
+        onClick={() => handleFavoriteToggle(restaurant.id)}
+      >
+        {favorites.includes(restaurant.id) ? '❤️' : '🤍'}
+      </button>
           </div>
+        ))}
+      </div>
+
+      <div className="pagination">
+        {Array.from({ length: Math.ceil(data.length / ITEMS_PER_PAGE) }, (_, index) => (
+          <button key={index + 1} onClick={() => handlePageChange(index + 1)}>
+            {index + 1}
+          </button>
         ))}
       </div>
 
