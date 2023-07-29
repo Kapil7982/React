@@ -1,0 +1,42 @@
+
+.App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    color: #555;
+  }
+  
+  hr {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
