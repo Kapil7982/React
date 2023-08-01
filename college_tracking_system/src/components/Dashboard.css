@@ -1,0 +1,83 @@
+.dashboard {
+    margin: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sortby,
+  .sortorder {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .sort,
+  .togglebtn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .sort:hover,
+  .togglebtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .addstudent {
+    margin-top: 20px;
+  }
+  
+  .addstudent form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .addstudent label,
+  .addstudent input,
+  .addstudent select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  .addstudent .submit {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .addstudent .submit:hover {
+    background-color: #218838;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
