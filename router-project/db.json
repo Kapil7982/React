@@ -1,0 +1,20 @@
+
+{
+    "products":[{"id":1,"name":"Dot","category":"Home Decor","images":"https://m.media-amazon.com/images/I/61w90zOPTWL.jpg"},
+    {"id":2,"name":"Karola","category":"Sports","images":"https://ipla.pluscdn.pl/dituel/cp/o6/o6mvmcbvz7m2mrkkphao28m3mkpcyrtg.JPG"},
+    {"id":3,"name":"Porter","category":"Electronics","images":"https://www.net-a-porter.com/variants/images/4394988609183435/in/w358_q60.jpg"},
+    {"id":4,"name":"Ibbie","category":"Beauty","images":"https://images.meesho.com/images/products/28130604/61a07_512.webp"},
+    {"id":5,"name":"Giacomo","category":"Home Decor","images":"https://www.giacomototti.com/wp-content/uploads/2022/12/G3A0341-1-1024x683.jpg"},
+    {"id":6,"name":"Kiri","category":"Home Decor","images":"https://i.pinimg.com/736x/4a/c0/09/4ac00972651201115bf72c32fbb30231--home-design.jpg"},
+    {"id":7,"name":"Dani","category":"Home Decor","images":"https://m.media-amazon.com/images/I/71T2w3sCNBL._AC_UF894,1000_QL80_.jpg"},
+    {"id":8,"name":"Emmaline","category":"Sports","images":"https://shopdearemmaline.com/cdn/shop/products/image_753e124b-5595-48f7-9472-c0a43b1dedc5_300x300.jpg?v=1690520295"},
+    {"id":9,"name":"Theresa","category":"Sports","images":"https://3.files.edl.io/410b/23/02/10/172404-9863ea36-3041-437f-85c0-dd652d7356ee.jpg"},
+    {"id":10,"name":"Karon","category":"Sports","images":"https://www.logolynx.com/images/logolynx/1d/1dfe816732e1ac3bbdb3c7f79f227041.jpeg"},
+    {"id":11,"name":"Bennie","category":"Books","images":"https://www.nb.co.za/en/helper/ReadImage/19884"},
+    {"id":12,"name":"Philbert","category":"Books","images":"https://pictures.abebooks.com/inventory/30455105728_4.jpg"},
+    {"id":13,"name":"Hagen","category":"Home Decor","images":"https://homeinspirationideas.net/wp-content/uploads/2016/03/Best-of-interior-design-styles-Victoria-Hagan-home-decoration-ideas-1.jpg"},
+    {"id":14,"name":"Cornell","category":"Beauty","images":"https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/autumn-beauty-at-cornell-university-ithaca-new-york-lynn-bauer.jpg"},
+    {"id":15,"name":"Tyrus","category":"Beauty","images":"https://thumbs.dreamstime.com/b/wedding-site-6494748.jpg"},
+    {"id":16,"name":"Helene","category":"Electronics","images":"https://pbs.twimg.com/media/Fn6W8KsXoBs7oIf.jpg"}
+    ]
+}
