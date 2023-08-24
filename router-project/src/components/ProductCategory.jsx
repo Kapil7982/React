@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Product.css'; // Import the Products.css styles
 
 const Products = () => {
@@ -16,11 +17,13 @@ const Products = () => {
     <div className="products-container">
       <div className="product-grid">
         {products.map(product => (
-          <div key={product.id} className="product-item">
+          <Link key={product.id} to={`/products/${product.id}`} className="product-link">
+          <div className="product-item">
             <img src={product.images} alt={product.name} className="product-image" />
             <p className="product-name">{product.name}</p>
             <p className="product-category">{product.category}</p>
           </div>
+        </Link>
         ))}
       </div>
     </div>

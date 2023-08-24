@@ -1,0 +1,20 @@
+.cart-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .cart-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cart-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-page li {
+    margin-bottom: 0.5rem;
+  }
+  

@@ -19,7 +19,7 @@ const About = () => {
       <div className="brand-story">
         <h3>Our Brand Story</h3>
         <p>
-          Founded in [year], our brand started with a vision to [share your brand's story and journey].
+          Founded in 2023, our brand started with a vision to [share your brand's story and journey].
         </p>
       </div>
 
