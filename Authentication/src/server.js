@@ -7,8 +7,11 @@ const connect = require('./configs/db')
 const productController = require('./controllers/product.controller')
 
 const {register,login} = require('./controllers/auth.controller')
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json());
 
