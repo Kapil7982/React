@@ -29,7 +29,7 @@ const register = async (req, res) => {
   
       const token = newToken(user);
   
-      res.status(201).json({ token });
+      res.status(201).json({ token, user });
     } catch (error) {
       console.error(error);
       res.status(500).send({ status: "failed", message: "An error occurred. Please try again later." });
@@ -56,7 +56,7 @@ const login = async function(req,res){
 
           const token = newToken(user);
   
-      res.status(201).json({ token });
+      res.status(201).json({ token, user });
 
         
     } catch (error) {

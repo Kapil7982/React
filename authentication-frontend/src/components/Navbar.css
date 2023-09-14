@@ -17,6 +17,7 @@
 
 .navbar-item-logo {
   margin-right: auto; 
+ 
 }
 
 .navbar-button {
@@ -35,6 +36,7 @@
 
 .navbar-logo {
   height: 40px;
+  border-radius: 5px;
 }
 
 .navbar-logo img {
@@ -44,4 +46,8 @@
 .navbar-button:hover {
   background-color: #ddd;
   color: #333;
+}
+
+.navbar-user-info {
+  color: white;
 }
