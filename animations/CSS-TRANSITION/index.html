@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Transition</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="square"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+
+    <div class="box-container">
+        <div class="box"></div>
+        <div class="box box-ease"></div>
+        <div class="box  box-ease-in"></div>
+        <div class="box box-in-out"></div>
+        <div class="box box-linear"></div>
+        <div class="box box-custom1"></div>
+        <div class="box box-custom2"></div>
+        <div class="box box-custom3"></div>
+    </div>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const box2 = document.querySelector('.box2');
+        setTimeout(function () {
+            box2.classList.add('appear');
+        }, 1000); // Adjust the delay as needed
+    });
+</script>
+
+</html>

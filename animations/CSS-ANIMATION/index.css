@@ -1,0 +1,51 @@
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner{
+    width: 50px; height: 50px; border: 4px solid #f29e0c; border-top: 4px solid transparent; border-radius: 50%;
+    animation: spin 2s linear infinite, changeColor 2s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.hamburger-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: #29e617;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.hamburger-container.active .line.top {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-container.active .line.middle {
+    opacity: 0;
+}
+
+.hamburger-container.active .line.bottom {
+    transform: translateY(-9px) rotate(-45deg);
+}

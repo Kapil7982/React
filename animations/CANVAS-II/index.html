@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANVAS - II</title>
+</head>
+
+<body>
+    <canvas id="mycanvas" width="800" height="800"></canvas>
+
+    <script>
+        var canvas = document.getElementById('mycanvas');
+        var ctx = canvas.getContext('2d');
+
+        var settings = {
+            gridSize: 8,
+            cellSize: 100,
+            colors: ['black', 'brown'],
+            playerSize: 30,
+            playerColor: 'white',
+            highlightClickColor: 'yellow',
+            highlightHoverColor: 'lightblue'
+        };
+
+        var player = {
+            x: settings.gridSize / 2 * settings.cellSize,
+            y: settings.gridSize / 2 * settings.cellSize
+        };
+
+        var clickedGrid = null;
+
+        function drawGrid() {
+            for (var i = 0; i < settings.gridSize; i++) {
+                for (var j = 0; j < settings.gridSize; j++) {
+                    var colorIndex = (i + j) % settings.colors.length;
+                    ctx.fillStyle = settings.colors[colorIndex];
+                    ctx.fillRect(j * settings.cellSize, i * settings.cellSize, settings.cellSize, settings.cellSize);
+                }
+            }
+        }
+
+        function drawPlayer() {
+            ctx.fillStyle = settings.playerColor;
+            ctx.beginPath();
+            ctx.arc(player.x, player.y, settings.playerSize, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        canvas.addEventListener('click', function (event) {
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;
+            var mouseY = event.clientY - rect.top;
+
+            var gridX = Math.floor(mouseX / settings.cellSize) * settings.cellSize;
+            var gridY = Math.floor(mouseY / settings.cellSize) * settings.cellSize;
+
+            clickedGrid = { x: gridX, y: gridY };
+        });
+
+        canvas.addEventListener('mousemove', function (event) {
+            var rect = canvas.getBoundingClientRect();
+            var mouseX = event.clientX - rect.left;
+            var mouseY = event.clientY - rect.top;
+
+            var gridX = Math.floor(mouseX / settings.cellSize) * settings.cellSize;
+            var gridY = Math.floor(mouseY / settings.cellSize) * settings.cellSize;
+
+            if (!clickedGrid || (clickedGrid.x !== gridX || clickedGrid.y !== gridY)) {
+                ctx.fillStyle = settings.highlightHoverColor;
+                ctx.fillRect(gridX, gridY, settings.cellSize, settings.cellSize);
+            }
+        });
+
+        window.addEventListener('keydown', function (event) {
+            switch (event.key) {
+                case 'ArrowUp':
+                    player.y -= settings.cellSize;
+                    break;
+
+                case 'ArrowDown':
+                    player.y += settings.cellSize;
+                    break;
+
+                case 'ArrowLeft':
+                    player.x -= settings.cellSize;
+                    break;
+
+                case 'ArrowRight':
+                    player.x += settings.cellSize;
+                    break;
+            }
+        });
+
+        function update() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawGrid();
+            drawPlayer();
+
+            if (clickedGrid) {
+                ctx.fillStyle = settings.highlightClickColor;
+                ctx.fillRect(clickedGrid.x, clickedGrid.y, settings.cellSize, settings.cellSize);
+            }
+
+            requestAnimationFrame(update);
+        }
+        update();
+    </script>
+</body>
+
+</html>

@@ -33,6 +33,7 @@ const ProductList = ({token}) => {
   return (
     <div>
       <h2>Product List</h2>
+      
       <ul className="product-list"> 
         {products.map((product) => (
           <li key={product._id} className="product-item">
