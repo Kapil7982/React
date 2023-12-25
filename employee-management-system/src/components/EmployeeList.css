@@ -1,0 +1,37 @@
+.list_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.employee_card {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.employee_card:hover {
+  transform: scale(1.05);
+}
+
+.employee_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.employee_name {
+  font-size: 16px;
+  color: #333;
+}
+
+.employee_title {
+  font-size: 14px;
+  color: #666;
+}
+

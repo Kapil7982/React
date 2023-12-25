@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short URL Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Short URL Generator</h1>
+    <form id="urlForm">
+        <label for="originalUrl">Enter URL:</label>
+        <input type="text" id="originalUrl" required>
+        <button type="submit">Generate Short URL</button>
+    </form>
+
+    <div id="shortUrlContainer" style="display:none;">
+        <h2>Short URL:</h2>
+        <p id="shortUrl"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

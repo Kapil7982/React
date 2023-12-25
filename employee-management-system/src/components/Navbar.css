@@ -1,0 +1,33 @@
+nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  li {
+    display: inline;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  a:hover {
+    background-color: #555;
+  }
+ 
+  a.active {
+    background-color: #555;
+  }
+  

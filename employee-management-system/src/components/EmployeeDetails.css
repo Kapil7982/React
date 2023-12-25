@@ -1,0 +1,58 @@
+.user_details {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .user_image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .user_name,
+  .user_salary,
+  .tasks,
+  .status,
+  .title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .tasks {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .task {
+    word-wrap: break-word;
+  }
+  
+  .fire,
+  .promote {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .promote {
+    background-color: #4caf50;
+    margin-left: 10px;
+  }
+  

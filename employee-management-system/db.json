@@ -1,0 +1,66 @@
+{
+  "employee": [
+    {
+      "employee_name": "Rahul",
+      "employee_id": "43",
+      "title": "Jr Software Developer",
+      "salary": "800000",
+      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXZlbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+      "username": "ram@gmail.com",
+      "password": "RamAgmail.com",
+      "tasks": "Fix bugs",
+      "status": "working",
+      "team": "qa",
+      "id": 1001
+    },
+    {
+      "employee_name": "Rahul",
+      "employee_id": "43",
+      "title": "Jr Software Developer",
+      "salary": "800000",
+      "image": "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZXZlbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80",
+      "username": "ram@gmail.com",
+      "password": "RamAgmail.com",
+      "tasks": "Fix bugs",
+      "status": "working",
+      "team": "qa",
+      "id": 1002
+    },
+    {
+      "employee_name": "Ramesh",
+      "employee_id": "78",
+      "title": "Team Lead",
+      "salary": "800000",
+      "image": "https://res.cloudinary.com/purnesh/image/upload/w_1000,f_auto,q_auto:eco,c_limit/211630045349485.jpg",
+      "username": "user",
+      "password": "user@gmail.com",
+      "tasks": "Home page UI",
+      "status": "working",
+      "team": "frontend",
+      "id": 1016
+    },
+    {
+      "username": "user",
+      "password": "user@gmail.com",
+      "id": 1017
+    },
+    {
+      "employee_name": "Guru Prasad",
+      "employee_id": "10008",
+      "title": "Intern",
+      "salary": "14999",
+      "image": "https://media.licdn.com/dms/image/C5603AQEFG9RlD19k-w/profile-displayphoto-shrink_800_800/0/1646141793564?e=2147483647&v=beta&t=xiqsWJO2B3Ru_NBB0XHZvFFP_vdiWEme7Fg2_kQ6KIU",
+      "username": "GuruPrasad",
+      "password": "guru@123",
+      "tasks": "Backend Schema Design",
+      "status": "working",
+      "team": "backend",
+      "id": 1018
+    },
+    {
+      "username": "GuruPrasad",
+      "password": "guru@123",
+      "id": 1019
+    }
+  ]
+}
