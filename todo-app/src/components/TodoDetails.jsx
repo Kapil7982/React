@@ -1,16 +1,21 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleComplete, removeTodo } from '../redux/action';
-import '../App.css';
 
 function TodoDetails() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const todo = useSelector((state) =>
-    state.todos.find((todo) => todo.id === parseInt(id))
-  );
+  const todos = useSelector((state) => state.todos.todos ?? []);
+  
+  const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
+  if (!isAuthenticated) {
+    return <Navigate to="/login" />;
+    //return <div>Please login to view todo details.</div>;
+  }
+
+  const todo = todos.find((todo) => todo.id === parseInt(id, 10));
   if (!todo) {
     return <div>Todo not found</div>;
   }

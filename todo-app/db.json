@@ -20,5 +20,8 @@
       "completed": false,
       "id": 4
     }
+  ],
+  "users": [
+    { "id": 1, "username": "user1", "password": "password1", "token": "validtoken" }
   ]
 }

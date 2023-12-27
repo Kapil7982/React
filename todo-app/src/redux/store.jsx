@@ -1,6 +1,14 @@
-import { createStore } from 'redux';
-import reducer from './reducers';
+// src/redux/store.jsx
 
-const store = createStore(reducer);
+import { createStore, combineReducers } from 'redux';
+import reducer from './reducers';
+import authReducer from './authReducer';
+
+const rootReducer = combineReducers({
+  todos: reducer,
+  auth: authReducer,
+});
+
+const store = createStore(rootReducer);
 
 export default store;
