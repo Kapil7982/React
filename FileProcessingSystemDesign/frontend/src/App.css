@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.file-list, .log-list {
+  margin: 20px;
+  text-align: left;
+}
+
+.notification {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
+}
