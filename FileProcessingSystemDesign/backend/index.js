@@ -12,6 +12,7 @@ const io = socketIo(server);
 
 app.use(cors());
 
+
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
